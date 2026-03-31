@@ -21,15 +21,6 @@ cd /home/node/.openclaw/workspace/skills/skill-publisher
 python scripts/setup_tokens.py
 ```
 
-或直接编辑 `.env` 文件（确保不提交到 GitHub）：
-
-```bash
-# .env
-GITHUB_TOKEN=ghp_xxxxx
-CLAWHUB_TOKEN=
-COZE_TOKEN=
-```
-
 ### 2. 发布 Skill
 
 ```bash
@@ -98,9 +89,9 @@ skill-publisher/
 ├── .gitignore            # 确保 .env 忽略
 ├── scripts/
 │   ├── publish.sh        # 发布脚本
-│   ├── check_status.py  # 状态检测
+│   ├── check_status.py   # 状态检测
 │   ├── gen_submission.py # 生成提交文本
-│   └── setup_tokens.py  # 交互式 Token 配置
+│   └── setup_tokens.py   # 交互式 Token 配置
 ├── data/
 │   └── platforms.json   # 平台元数据
 └── docs/
@@ -130,31 +121,6 @@ skill-publisher/
 
 ---
 
-## 使用示例
-
-### 发布 my-companion 到所有平台
-
-```bash
-cd /home/node/.openclaw/workspace/skills/skill-publisher
-
-# 1. 先检测状态
-python scripts/check_status.py my-companion
-
-# 2. 自动发布到 ClawHub + GitHub
-python scripts/publish.sh my-companion
-
-# 3. 为其他平台生成提交文本
-python scripts/gen_submission.py my-companion
-```
-
-### 配置新平台 Token
-
-```bash
-python scripts/setup_tokens.py
-```
-
----
-
 ## 故障排除
 
 ### Token 无效
@@ -173,27 +139,7 @@ error: src refspec main does not match any
 ```
 Error: Published failed
 ```
-→ 检查 `CLAWHUB_TOKEN` 是否正确，或使用 `--force` 强制发布
-
----
-
-## 扩展平台支持
-
-如需添加新平台，编辑 `data/platforms.json`：
-
-```json
-{
-  "platforms": {
-    "new-platform": {
-      "name": "新平台",
-      "url": "https://...",
-      "auto": false,
-      "requires": "API Token",
-      "note": "说明"
-    }
-  }
-}
-```
+→ 检查 `CLAWHUB_TOKEN` 是否正确
 
 ---
 
@@ -205,5 +151,5 @@ Error: Published failed
 
 ---
 
-*维护者：Ryan BihAI  
+*ClawHub slug: openclaw-skilldist  
 版本：2.1.0*

@@ -1,17 +1,9 @@
 {
-  "ownerId": "kn75dvek1dkfz0r0xwdp4xtc2983qg44",
-  "slug": "haola-skill-publisher",
-  "version": "2.0.0",
-  "publishedAt": 1774913911586,
-  "namespace": "ryanbihai",
-  "changelog": "v2.0.0: 发布状态检测+各平台提交文本生成+一键发布脚本，深度优化",
-  "tags": [
-    "skill",
-    "publish",
-    "multi-platform",
-    "clawhub",
-    "github",
-    "发布"
-  ],
-  "requires": {}
+  "name": "Skill Publisher",
+  "slug": "openclaw-skilldist",
+  "version": "2.1.0",
+  "description": "多平台 OpenClaw Skill 发布助手 - 一键发布到 ClawHub/GitHub，为 COZE/元器/百炼生成提交文本",
+  "author": "Ryan BihAI",
+  "tags": ["openclaw", "skill", "publish", "clawhub", "github", "coze"],
+  "changelog": "v2.1.0: 交互式Token配置向导, 完整平台调研报告, Token安全存储架构"
 }
