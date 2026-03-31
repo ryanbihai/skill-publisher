@@ -1,9 +1,9 @@
 {
   "name": "Skill Publisher",
   "slug": "openclaw-skilldist",
-  "version": "2.1.0",
+  "version": "2.3.0",
   "description": "多平台 OpenClaw Skill 发布助手 - 一键发布到 ClawHub/GitHub，为 COZE/元器/百炼生成提交文本",
   "author": "Ryan BihAI",
   "tags": ["openclaw", "skill", "publish", "clawhub", "github", "coze"],
-  "changelog": "v2.1.0: 交互式Token配置向导, 完整平台调研报告, Token安全存储架构"
+  "changelog": "v2.3.0: 优化发布流程，增加演示模式，持续监控模式，彩色输出，更友好的错误提示"
 }
